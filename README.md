@@ -1,6 +1,6 @@
 # CardlyApp
 
-CardlyApp is an iOS application focused on simplifying how users recognize and manage their credit cards. The app is built to automatically detect cards using BIN recognition and Apple Vision, retrieve details such as issuer, network, and tier, and organize this information in an intuitive way. Backed by a Vapor API and PostgreSQL, CardlyApp is designed to evolve into a full-featured platform for managing cards and maximizing rewards.
+I designed Cardly with the intent of making it easier to pull rewards information for cards that a user had. The goal was that upon entering a store, Cardly would automatically reccomend the optimal card for a transaction. This would involve storing user cards, along comprehensive database of all cards to pick from, and their rewards information. I also integrated Apple Vision for OCR, pulling scanned card numbers and extracting the bin for use. The goal is to expand the app further, building a full-featured platform for managing cards and maximizing rewards.
 
 ## Current Capabilities
 - Detects card BINs using camera input and Apple Vision for enhanced scanning  
