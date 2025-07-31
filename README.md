@@ -21,9 +21,3 @@ I designed Cardly with the intent of making it easier to pull rewards informatio
 - Implement user authentication to enable multi-device syncing  
 - Introduce real-time analytics and dynamic card offers  
 - Deploy backend to a scalable cloud environment for production use  
-
-## Getting Started
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/hamzahyous/CardlyApp.git
-   cd CardlyApp
