@@ -12,3 +12,6 @@ backend/.swiftpm/
 *.dSYM/
 */.build/
 *.dSYM/
+# Xcode user state
+*.xcuserstate
+xcuserdata/
