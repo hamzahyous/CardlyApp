@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:CardlyApp"
+      name = "CardlyApp">
+      <Group
+         location = "group:View Models"
+         name = "View Models">
+         <FileRef
+            location = "group:CardListViewModel.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Persistence.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Assets.xcassets">
+      </FileRef>
+      <Group
+         location = "group:Utils"
+         name = "Utils">
+         <FileRef
+            location = "group:HandyAPI.swift">
+         </FileRef>
+         <FileRef
+            location = "group:CardScanWrapper.swift">
+         </FileRef>
+         <FileRef
+            location = "group:CardSeeder.swift">
+         </FileRef>
+         <FileRef
+            location = "group:GradientHelper.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Models"
+         name = "Models">
+         <FileRef
+            location = "group:CreditCard+CoreDataProperties.swift">
+         </FileRef>
+         <FileRef
+            location = "group:CreditCard+CoreDataClass.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Preview Content"
+         name = "Preview Content">
+         <FileRef
+            location = "group:Preview Assets.xcassets">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Components"
+         name = "Components">
+         <FileRef
+            location = "group:CardCell.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:CardlyAppApp.swift">
+      </FileRef>
+      <Group
+         location = "group:Controllers"
+         name = "Controllers">
+         <FileRef
+            location = "group:CameraScannerController.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Views"
+         name = "Views">
+         <FileRef
+            location = "group:CameraScannerView.swift">
+         </FileRef>
+         <FileRef
+            location = "group:CardScannerView.swift">
+         </FileRef>
+         <FileRef
+            location = "group:CardListView.swift">
+         </FileRef>
+         <FileRef
+            location = "group:ManualCardEntryView.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:CardlyApp.xcdatamodeld">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:backend/Package.swift">
+   </FileRef>
+   <FileRef
+      location = "group:backend">
+   </FileRef>
+   <FileRef
+      location = "group:CardlyApp.xcodeproj">
+   </FileRef>
+</Workspace>

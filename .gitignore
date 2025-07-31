@@ -1,0 +1,14 @@
+backend/.build/
+backend/.swiftpm/
+backend/.build/
+backend/.build/
+backend/.swiftpm/
+backend/.build/
+backend/.swiftpm/
+backend/.build/
+backend/.swiftpm/
+*.dSYM/
+*/.build/
+*.dSYM/
+*/.build/
+*.dSYM/

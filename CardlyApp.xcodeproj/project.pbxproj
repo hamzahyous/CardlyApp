@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4760283F2E2333C600A30C02 /* CardlyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4760283E2E2333C600A30C02 /* CardlyAppTests.swift */; };
+		476028492E2333C600A30C02 /* CardlyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476028482E2333C600A30C02 /* CardlyAppUITests.swift */; };
+		4760284B2E2333C600A30C02 /* CardlyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4760284A2E2333C600A30C02 /* CardlyAppUITestsLaunchTests.swift */; };
+		4771FB712E30946F000B8344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4771FB6B2E30946F000B8344 /* Assets.xcassets */; };
+		4771FB722E30946F000B8344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4771FB5D2E30946F000B8344 /* Preview Assets.xcassets */; };
+		4771FB732E30946F000B8344 /* CardScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB682E30946F000B8344 /* CardScannerView.swift */; };
+		4771FB742E30946F000B8344 /* CardScanWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB5F2E30946F000B8344 /* CardScanWrapper.swift */; };
+		4771FB762E30946F000B8344 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB6E2E30946F000B8344 /* Persistence.swift */; };
+		4771FB772E30946F000B8344 /* CardSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB602E30946F000B8344 /* CardSeeder.swift */; };
+		4771FB782E30946F000B8344 /* GradientHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB612E30946F000B8344 /* GradientHelper.swift */; };
+		4771FB792E30946F000B8344 /* CardlyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB6D2E30946F000B8344 /* CardlyAppApp.swift */; };
+		4771FB7B2E30946F000B8344 /* CardlyApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB6C2E30946F000B8344 /* CardlyApp.xcdatamodeld */; };
+		4771FB7C2E30946F000B8344 /* HandyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB622E30946F000B8344 /* HandyAPI.swift */; };
+		4771FB7D2E30946F000B8344 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB672E30946F000B8344 /* CardListView.swift */; };
+		4771FB7E2E30946F000B8344 /* UserCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB642E30946F000B8344 /* UserCardsViewModel.swift */; };
+		4771FB7F2E30946F000B8344 /* CameraScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB582E30946F000B8344 /* CameraScannerController.swift */; };
+		4771FB802E30946F000B8344 /* ManualCardEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB692E30946F000B8344 /* ManualCardEntryView.swift */; };
+		4771FB812E30946F000B8344 /* CameraScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB662E30946F000B8344 /* CameraScannerView.swift */; };
+		4771FB822E30946F000B8344 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB562E30946F000B8344 /* CardCell.swift */; };
+		4771FB862E35412C000B8344 /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB852E354129000B8344 /* CardService.swift */; };
+		4771FB882E371CB0000B8344 /* FilteredAllCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB872E371CA6000B8344 /* FilteredAllCardsView.swift */; };
+		4771FB8A2E37EFE8000B8344 /* AllCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB892E37EFE3000B8344 /* AllCardsViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4760283B2E2333C600A30C02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4760281D2E2333C300A30C02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 476028242E2333C300A30C02;
+			remoteInfo = CardlyApp;
+		};
+		476028452E2333C600A30C02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4760281D2E2333C300A30C02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 476028242E2333C300A30C02;
+			remoteInfo = CardlyApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		476028252E2333C300A30C02 /* CardlyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardlyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4760283A2E2333C600A30C02 /* CardlyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardlyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4760283E2E2333C600A30C02 /* CardlyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardlyAppTests.swift; sourceTree = "<group>"; };
+		476028442E2333C600A30C02 /* CardlyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardlyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		476028482E2333C600A30C02 /* CardlyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardlyAppUITests.swift; sourceTree = "<group>"; };
+		4760284A2E2333C600A30C02 /* CardlyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardlyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4771FB562E30946F000B8344 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		4771FB582E30946F000B8344 /* CameraScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerController.swift; sourceTree = "<group>"; };
+		4771FB5D2E30946F000B8344 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4771FB5F2E30946F000B8344 /* CardScanWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScanWrapper.swift; sourceTree = "<group>"; };
+		4771FB602E30946F000B8344 /* CardSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSeeder.swift; sourceTree = "<group>"; };
+		4771FB612E30946F000B8344 /* GradientHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientHelper.swift; sourceTree = "<group>"; };
+		4771FB622E30946F000B8344 /* HandyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandyAPI.swift; sourceTree = "<group>"; };
+		4771FB642E30946F000B8344 /* UserCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardsViewModel.swift; sourceTree = "<group>"; };
+		4771FB662E30946F000B8344 /* CameraScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerView.swift; sourceTree = "<group>"; };
+		4771FB672E30946F000B8344 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
+		4771FB682E30946F000B8344 /* CardScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScannerView.swift; sourceTree = "<group>"; };
+		4771FB692E30946F000B8344 /* ManualCardEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualCardEntryView.swift; sourceTree = "<group>"; };
+		4771FB6B2E30946F000B8344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4771FB6D2E30946F000B8344 /* CardlyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardlyAppApp.swift; sourceTree = "<group>"; };
+		4771FB6E2E30946F000B8344 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4771FB702E30946F000B8344 /* CardlyApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CardlyApp.xcdatamodel; sourceTree = "<group>"; };
+		4771FB832E30953E000B8344 /* backend */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = backend; sourceTree = "<group>"; };
+		4771FB852E354129000B8344 /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
+		4771FB872E371CA6000B8344 /* FilteredAllCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredAllCardsView.swift; sourceTree = "<group>"; };
+		4771FB892E37EFE3000B8344 /* AllCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCardsViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		476028222E2333C300A30C02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476028372E2333C600A30C02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476028412E2333C600A30C02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4760281C2E2333C300A30C02 = {
+			isa = PBXGroup;
+			children = (
+				4771FB832E30953E000B8344 /* backend */,
+				4771FB6F2E30946F000B8344 /* CardlyApp */,
+				4760283D2E2333C600A30C02 /* CardlyAppTests */,
+				476028472E2333C600A30C02 /* CardlyAppUITests */,
+				476028262E2333C300A30C02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		476028262E2333C300A30C02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				476028252E2333C300A30C02 /* CardlyApp.app */,
+				4760283A2E2333C600A30C02 /* CardlyAppTests.xctest */,
+				476028442E2333C600A30C02 /* CardlyAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4760283D2E2333C600A30C02 /* CardlyAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				4760283E2E2333C600A30C02 /* CardlyAppTests.swift */,
+			);
+			path = CardlyAppTests;
+			sourceTree = "<group>";
+		};
+		476028472E2333C600A30C02 /* CardlyAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				476028482E2333C600A30C02 /* CardlyAppUITests.swift */,
+				4760284A2E2333C600A30C02 /* CardlyAppUITestsLaunchTests.swift */,
+			);
+			path = CardlyAppUITests;
+			sourceTree = "<group>";
+		};
+		4771FB572E30946F000B8344 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4771FB562E30946F000B8344 /* CardCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4771FB592E30946F000B8344 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4771FB582E30946F000B8344 /* CameraScannerController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4771FB5E2E30946F000B8344 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4771FB5D2E30946F000B8344 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4771FB632E30946F000B8344 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4771FB5F2E30946F000B8344 /* CardScanWrapper.swift */,
+				4771FB602E30946F000B8344 /* CardSeeder.swift */,
+				4771FB612E30946F000B8344 /* GradientHelper.swift */,
+				4771FB622E30946F000B8344 /* HandyAPI.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4771FB652E30946F000B8344 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				4771FB892E37EFE3000B8344 /* AllCardsViewModel.swift */,
+				4771FB642E30946F000B8344 /* UserCardsViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		4771FB6A2E30946F000B8344 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4771FB872E371CA6000B8344 /* FilteredAllCardsView.swift */,
+				4771FB662E30946F000B8344 /* CameraScannerView.swift */,
+				4771FB672E30946F000B8344 /* CardListView.swift */,
+				4771FB682E30946F000B8344 /* CardScannerView.swift */,
+				4771FB692E30946F000B8344 /* ManualCardEntryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4771FB6F2E30946F000B8344 /* CardlyApp */ = {
+			isa = PBXGroup;
+			children = (
+				4771FB842E35410B000B8344 /* Services */,
+				4771FB572E30946F000B8344 /* Components */,
+				4771FB592E30946F000B8344 /* Controllers */,
+				4771FB5E2E30946F000B8344 /* Preview Content */,
+				4771FB632E30946F000B8344 /* Utils */,
+				4771FB652E30946F000B8344 /* View Models */,
+				4771FB6A2E30946F000B8344 /* Views */,
+				4771FB6B2E30946F000B8344 /* Assets.xcassets */,
+				4771FB6C2E30946F000B8344 /* CardlyApp.xcdatamodeld */,
+				4771FB6D2E30946F000B8344 /* CardlyAppApp.swift */,
+				4771FB6E2E30946F000B8344 /* Persistence.swift */,
+			);
+			path = CardlyApp;
+			sourceTree = "<group>";
+		};
+		4771FB842E35410B000B8344 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4771FB852E354129000B8344 /* CardService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		476028242E2333C300A30C02 /* CardlyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4760284E2E2333C600A30C02 /* Build configuration list for PBXNativeTarget "CardlyApp" */;
+			buildPhases = (
+				476028212E2333C300A30C02 /* Sources */,
+				476028222E2333C300A30C02 /* Frameworks */,
+				476028232E2333C300A30C02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardlyApp;
+			productName = CardlyApp;
+			productReference = 476028252E2333C300A30C02 /* CardlyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		476028392E2333C600A30C02 /* CardlyAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 476028512E2333C600A30C02 /* Build configuration list for PBXNativeTarget "CardlyAppTests" */;
+			buildPhases = (
+				476028362E2333C600A30C02 /* Sources */,
+				476028372E2333C600A30C02 /* Frameworks */,
+				476028382E2333C600A30C02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4760283C2E2333C600A30C02 /* PBXTargetDependency */,
+			);
+			name = CardlyAppTests;
+			productName = CardlyAppTests;
+			productReference = 4760283A2E2333C600A30C02 /* CardlyAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		476028432E2333C600A30C02 /* CardlyAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 476028542E2333C600A30C02 /* Build configuration list for PBXNativeTarget "CardlyAppUITests" */;
+			buildPhases = (
+				476028402E2333C600A30C02 /* Sources */,
+				476028412E2333C600A30C02 /* Frameworks */,
+				476028422E2333C600A30C02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				476028462E2333C600A30C02 /* PBXTargetDependency */,
+			);
+			name = CardlyAppUITests;
+			productName = CardlyAppUITests;
+			productReference = 476028442E2333C600A30C02 /* CardlyAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4760281D2E2333C300A30C02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					476028242E2333C300A30C02 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					476028392E2333C600A30C02 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 476028242E2333C300A30C02;
+					};
+					476028432E2333C600A30C02 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 476028242E2333C300A30C02;
+					};
+				};
+			};
+			buildConfigurationList = 476028202E2333C300A30C02 /* Build configuration list for PBXProject "CardlyApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4760281C2E2333C300A30C02;
+			productRefGroup = 476028262E2333C300A30C02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				476028242E2333C300A30C02 /* CardlyApp */,
+				476028392E2333C600A30C02 /* CardlyAppTests */,
+				476028432E2333C600A30C02 /* CardlyAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		476028232E2333C300A30C02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4771FB712E30946F000B8344 /* Assets.xcassets in Resources */,
+				4771FB722E30946F000B8344 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476028382E2333C600A30C02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476028422E2333C600A30C02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		476028212E2333C300A30C02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4771FB732E30946F000B8344 /* CardScannerView.swift in Sources */,
+				4771FB742E30946F000B8344 /* CardScanWrapper.swift in Sources */,
+				4771FB882E371CB0000B8344 /* FilteredAllCardsView.swift in Sources */,
+				4771FB762E30946F000B8344 /* Persistence.swift in Sources */,
+				4771FB772E30946F000B8344 /* CardSeeder.swift in Sources */,
+				4771FB782E30946F000B8344 /* GradientHelper.swift in Sources */,
+				4771FB8A2E37EFE8000B8344 /* AllCardsViewModel.swift in Sources */,
+				4771FB792E30946F000B8344 /* CardlyAppApp.swift in Sources */,
+				4771FB7B2E30946F000B8344 /* CardlyApp.xcdatamodeld in Sources */,
+				4771FB862E35412C000B8344 /* CardService.swift in Sources */,
+				4771FB7C2E30946F000B8344 /* HandyAPI.swift in Sources */,
+				4771FB7D2E30946F000B8344 /* CardListView.swift in Sources */,
+				4771FB7E2E30946F000B8344 /* UserCardsViewModel.swift in Sources */,
+				4771FB7F2E30946F000B8344 /* CameraScannerController.swift in Sources */,
+				4771FB802E30946F000B8344 /* ManualCardEntryView.swift in Sources */,
+				4771FB812E30946F000B8344 /* CameraScannerView.swift in Sources */,
+				4771FB822E30946F000B8344 /* CardCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476028362E2333C600A30C02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4760283F2E2333C600A30C02 /* CardlyAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476028402E2333C600A30C02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				476028492E2333C600A30C02 /* CardlyAppUITests.swift in Sources */,
+				4760284B2E2333C600A30C02 /* CardlyAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4760283C2E2333C600A30C02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 476028242E2333C300A30C02 /* CardlyApp */;
+			targetProxy = 4760283B2E2333C600A30C02 /* PBXContainerItemProxy */;
+		};
+		476028462E2333C600A30C02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 476028242E2333C300A30C02 /* CardlyApp */;
+			targetProxy = 476028452E2333C600A30C02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4760284C2E2333C600A30C02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4760284D2E2333C600A30C02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4760284F2E2333C600A30C02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CardlyApp/Preview Content\"";
+				DEVELOPMENT_TEAM = A9VYDJPK7N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Cardly;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We use your camera to scan your card\n";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hamzahyousuf.CardlyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		476028502E2333C600A30C02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CardlyApp/Preview Content\"";
+				DEVELOPMENT_TEAM = A9VYDJPK7N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Cardly;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We use your camera to scan your card\n";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hamzahyousuf.CardlyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		476028522E2333C600A30C02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hamzahyousuf.CardlyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardlyApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CardlyApp";
+			};
+			name = Debug;
+		};
+		476028532E2333C600A30C02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hamzahyousuf.CardlyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardlyApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CardlyApp";
+			};
+			name = Release;
+		};
+		476028552E2333C600A30C02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hamzahyousuf.CardlyAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CardlyApp;
+			};
+			name = Debug;
+		};
+		476028562E2333C600A30C02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hamzahyousuf.CardlyAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CardlyApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		476028202E2333C300A30C02 /* Build configuration list for PBXProject "CardlyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4760284C2E2333C600A30C02 /* Debug */,
+				4760284D2E2333C600A30C02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4760284E2E2333C600A30C02 /* Build configuration list for PBXNativeTarget "CardlyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4760284F2E2333C600A30C02 /* Debug */,
+				476028502E2333C600A30C02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		476028512E2333C600A30C02 /* Build configuration list for PBXNativeTarget "CardlyAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476028522E2333C600A30C02 /* Debug */,
+				476028532E2333C600A30C02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		476028542E2333C600A30C02 /* Build configuration list for PBXNativeTarget "CardlyAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476028552E2333C600A30C02 /* Debug */,
+				476028562E2333C600A30C02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4771FB6C2E30946F000B8344 /* CardlyApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4771FB702E30946F000B8344 /* CardlyApp.xcdatamodel */,
+			);
+			currentVersion = 4771FB702E30946F000B8344 /* CardlyApp.xcdatamodel */;
+			path = CardlyApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4760281D2E2333C300A30C02 /* Project object */;
+}
