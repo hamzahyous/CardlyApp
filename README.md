@@ -1,29 +1,29 @@
 # CardlyApp
 
-CardlyApp is a modern iOS application designed to streamline card recognition and management. The project integrates a SwiftUI front end with a Vapor backend to provide a seamless experience for detecting, storing, and managing credit cards and their associated metadata.
+CardlyApp is an iOS application focused on simplifying how users recognize and manage their credit cards. The app is built to automatically detect cards using BIN recognition and Apple Vision, retrieve details such as issuer, network, and tier, and organize this information in an intuitive way. Backed by a Vapor API and PostgreSQL, CardlyApp is designed to evolve into a full-featured platform for managing cards and maximizing rewards.
 
-## Features
-- **Card Scanning** – Detects card BINs and retrieves issuer/network/tier details.
-- **Vapor Backend** – Manages card data with a PostgreSQL database.
-- **User Card Storage** – Allows users to add and manage their own cards.
-- **API Integration** – Supports BIN metadata lookups and card verification.
+## Current Capabilities
+- Detects card BINs using camera input and Apple Vision for enhanced scanning  
+- Retrieves and displays metadata (issuer, network, tier)  
+- Stores user-added cards and links them to backend data  
+- Uses a Vapor backend with PostgreSQL to handle card data and metadata lookups  
+- Integrates with BIN lookup APIs for verification  
 
 ## Tech Stack
-- **Frontend:** Swift, SwiftUI
-- **Backend:** Vapor (Swift)
-- **Database:** PostgreSQL (via Fluent ORM)
-- **APIs:** BIN Lookup API integration
+- **Frontend:** Swift, SwiftUI, Apple Vision  
+- **Backend:** Vapor (Swift)  
+- **Database:** PostgreSQL (Fluent ORM)  
+- **APIs:** BIN Lookup API integration  
+
+## Future Goals
+- Add detailed rewards tracking and personalized recommendations  
+- Build a polished dashboard for card management and usage insights  
+- Implement user authentication to enable multi-device syncing  
+- Introduce real-time analytics and dynamic card offers  
+- Deploy backend to a scalable cloud environment for production use  
 
 ## Getting Started
-
-### Prerequisites
-- Xcode 15+ (for the iOS app)
-- Swift 6.0+
-- PostgreSQL (for local backend development)
-- Vapor toolbox (`brew install vapor`)
-
-### Running the App
-1. Clone this repository:
+1. Clone the repository:
    ```bash
    git clone https://github.com/hamzahyous/CardlyApp.git
    cd CardlyApp
