@@ -71,7 +71,7 @@ struct CardListView: View {
                     ScrollView {
                         LazyVStack(spacing: 16) {
                             ForEach(viewModel.cards, id: \.id) { userCard in
-                                CardCell(userCard: userCard)
+                                UserCardCell(userCard: userCard)
                                     .onLongPressGesture {
                                         showingDeleteConfirm = true
                                         selectedCardToDelete = userCard

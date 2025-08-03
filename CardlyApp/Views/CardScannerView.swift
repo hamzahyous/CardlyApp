@@ -126,3 +126,5 @@ extension View {
     CardScannerView(showScanner: .constant(true))
 }
 
+
+// Unseeded card example: 5123 4512 3456 7899

@@ -13,7 +13,6 @@
 		4771FB712E30946F000B8344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4771FB6B2E30946F000B8344 /* Assets.xcassets */; };
 		4771FB722E30946F000B8344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4771FB5D2E30946F000B8344 /* Preview Assets.xcassets */; };
 		4771FB732E30946F000B8344 /* CardScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB682E30946F000B8344 /* CardScannerView.swift */; };
-		4771FB742E30946F000B8344 /* CardScanWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB5F2E30946F000B8344 /* CardScanWrapper.swift */; };
 		4771FB762E30946F000B8344 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB6E2E30946F000B8344 /* Persistence.swift */; };
 		4771FB772E30946F000B8344 /* CardSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB602E30946F000B8344 /* CardSeeder.swift */; };
 		4771FB782E30946F000B8344 /* GradientHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB612E30946F000B8344 /* GradientHelper.swift */; };
@@ -25,10 +24,12 @@
 		4771FB7F2E30946F000B8344 /* CameraScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB582E30946F000B8344 /* CameraScannerController.swift */; };
 		4771FB802E30946F000B8344 /* ManualCardEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB692E30946F000B8344 /* ManualCardEntryView.swift */; };
 		4771FB812E30946F000B8344 /* CameraScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB662E30946F000B8344 /* CameraScannerView.swift */; };
-		4771FB822E30946F000B8344 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB562E30946F000B8344 /* CardCell.swift */; };
+		4771FB822E30946F000B8344 /* ExpandedUserCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB562E30946F000B8344 /* ExpandedUserCardCell.swift */; };
 		4771FB862E35412C000B8344 /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB852E354129000B8344 /* CardService.swift */; };
 		4771FB882E371CB0000B8344 /* FilteredAllCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB872E371CA6000B8344 /* FilteredAllCardsView.swift */; };
 		4771FB8A2E37EFE8000B8344 /* AllCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB892E37EFE3000B8344 /* AllCardsViewModel.swift */; };
+		4771FB8E2E3B2BEC000B8344 /* UserCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB8D2E3B2BE6000B8344 /* UserCardCell.swift */; };
+		4771FB922E3FFA64000B8344 /* ExpandedAllCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771FB912E3FFA5F000B8344 /* ExpandedAllCardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +56,9 @@
 		476028442E2333C600A30C02 /* CardlyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardlyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		476028482E2333C600A30C02 /* CardlyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardlyAppUITests.swift; sourceTree = "<group>"; };
 		4760284A2E2333C600A30C02 /* CardlyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardlyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		4771FB562E30946F000B8344 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		4771FB562E30946F000B8344 /* ExpandedUserCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedUserCardCell.swift; sourceTree = "<group>"; };
 		4771FB582E30946F000B8344 /* CameraScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerController.swift; sourceTree = "<group>"; };
 		4771FB5D2E30946F000B8344 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4771FB5F2E30946F000B8344 /* CardScanWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScanWrapper.swift; sourceTree = "<group>"; };
 		4771FB602E30946F000B8344 /* CardSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSeeder.swift; sourceTree = "<group>"; };
 		4771FB612E30946F000B8344 /* GradientHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientHelper.swift; sourceTree = "<group>"; };
 		4771FB622E30946F000B8344 /* HandyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandyAPI.swift; sourceTree = "<group>"; };
@@ -75,6 +75,8 @@
 		4771FB852E354129000B8344 /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
 		4771FB872E371CA6000B8344 /* FilteredAllCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredAllCardsView.swift; sourceTree = "<group>"; };
 		4771FB892E37EFE3000B8344 /* AllCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCardsViewModel.swift; sourceTree = "<group>"; };
+		4771FB8D2E3B2BE6000B8344 /* UserCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardCell.swift; sourceTree = "<group>"; };
+		4771FB912E3FFA5F000B8344 /* ExpandedAllCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedAllCardCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +145,9 @@
 		4771FB572E30946F000B8344 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				4771FB562E30946F000B8344 /* CardCell.swift */,
+				4771FB912E3FFA5F000B8344 /* ExpandedAllCardCell.swift */,
+				4771FB8D2E3B2BE6000B8344 /* UserCardCell.swift */,
+				4771FB562E30946F000B8344 /* ExpandedUserCardCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -167,7 +171,6 @@
 		4771FB632E30946F000B8344 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				4771FB5F2E30946F000B8344 /* CardScanWrapper.swift */,
 				4771FB602E30946F000B8344 /* CardSeeder.swift */,
 				4771FB612E30946F000B8344 /* GradientHelper.swift */,
 				4771FB622E30946F000B8344 /* HandyAPI.swift */,
@@ -353,7 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4771FB732E30946F000B8344 /* CardScannerView.swift in Sources */,
-				4771FB742E30946F000B8344 /* CardScanWrapper.swift in Sources */,
+				4771FB8E2E3B2BEC000B8344 /* UserCardCell.swift in Sources */,
 				4771FB882E371CB0000B8344 /* FilteredAllCardsView.swift in Sources */,
 				4771FB762E30946F000B8344 /* Persistence.swift in Sources */,
 				4771FB772E30946F000B8344 /* CardSeeder.swift in Sources */,
@@ -362,13 +365,14 @@
 				4771FB792E30946F000B8344 /* CardlyAppApp.swift in Sources */,
 				4771FB7B2E30946F000B8344 /* CardlyApp.xcdatamodeld in Sources */,
 				4771FB862E35412C000B8344 /* CardService.swift in Sources */,
+				4771FB922E3FFA64000B8344 /* ExpandedAllCardCell.swift in Sources */,
 				4771FB7C2E30946F000B8344 /* HandyAPI.swift in Sources */,
 				4771FB7D2E30946F000B8344 /* CardListView.swift in Sources */,
 				4771FB7E2E30946F000B8344 /* UserCardsViewModel.swift in Sources */,
 				4771FB7F2E30946F000B8344 /* CameraScannerController.swift in Sources */,
 				4771FB802E30946F000B8344 /* ManualCardEntryView.swift in Sources */,
 				4771FB812E30946F000B8344 /* CameraScannerView.swift in Sources */,
-				4771FB822E30946F000B8344 /* CardCell.swift in Sources */,
+				4771FB822E30946F000B8344 /* ExpandedUserCardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

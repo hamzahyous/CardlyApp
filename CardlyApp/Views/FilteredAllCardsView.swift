@@ -49,57 +49,80 @@ struct FilteredAllCardsView: View {
                         Text("No cards found for BIN \(bin)")
                             .foregroundColor(.gray)
                         NavigationLink("Enter Manually") {
-                            ManualCardEntryView()
+                            ManualCardEntryView(
+                                prefilledIssuer: binMetadata?.issuer,
+                                prefilledNetwork: binMetadata?.scheme,
+                                last4: last4,
+                                bin: bin,
+                                showScanner: $showScanner,
+                                navigateToFiltered: $navigateToFiltered
+                            )
                         }
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                 } else {
                     List(filteredResults, id: \.id) { card in
-                        HStack {
-                            VStack(alignment: .leading) {
-                                Text(card.name).font(.headline)
-                                Text("\(card.issuer) • \(card.network) • \(card.tier)")
-                                    .font(.subheadline)
-                                    .foregroundColor(.gray)
-                            }
-                            Spacer()
-                            if selectedCardID == card.id {
-                                Image(systemName: "checkmark.circle.fill")
-                                    .foregroundColor(.blue)
-                            }
-                        }
-                        .contentShape(Rectangle())
+                        ExpandedAllCardCell(card: card)
+                            .scaleEffect(selectedCardID == card.id ? 1.03 : 1.0)
+                            .shadow(color: selectedCardID == card.id ? .black.opacity(0.3) : .clear,
+                                    radius: 8, x: 0, y: 5)
+                            .animation(.spring(response: 0.3, dampingFraction: 0.7), value: selectedCardID)
+                            .padding(.vertical, 6)
+                        .contentShape(Rectangle()) // makes the whole card tappable
                         .onTapGesture {
                             selectedCardID = (selectedCardID == card.id) ? nil : card.id
                         }
+                        .listRowSeparator(.hidden)
+                        .listRowInsets(EdgeInsets())
+                        .listRowBackground(Color.clear)
                     }
                     .listStyle(.plain)
+                    .scrollContentBackground(.hidden)         // Remove default List background
+                    .background(Color(.systemGroupedBackground))
+
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-
             // Bottom bar
             HStack(spacing: 12) {
-                NavigationLink(destination: ManualCardEntryView()) {
+                // 🔹 Enter Manually (always visible)
+                NavigationLink(destination:
+                                ManualCardEntryView(
+                                    prefilledIssuer: binMetadata?.issuer,
+                                    prefilledNetwork: binMetadata?.scheme,
+                                    last4: last4,
+                                    bin: bin,
+                                    showScanner: $showScanner,
+                                    navigateToFiltered: $navigateToFiltered
+                                )) {
                     Text("Enter Manually")
                         .frame(maxWidth: .infinity)
                         .padding()
                         .background(Color.gray.opacity(0.2))
-                        .cornerRadius(8)
+                        .foregroundColor(.black.opacity(0.7))
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
                 }
-                if selectedCardID != nil {
-                    Button("Confirm") {
-                        confirmSelection()
-                        navigateToFiltered = false
-                        showScanner = false
-                    }
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
+
+                // 🔹 Confirm (always visible but styled based on state)
+                Button("Confirm") {
+                    confirmSelection()
+                    navigateToFiltered = false
+                    showScanner = false
                 }
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(selectedCardID == nil ? Color.gray.opacity(0.2) : Color.blue)
+                .foregroundColor(selectedCardID == nil ? .gray : .white)
+                .clipShape(RoundedRectangle(cornerRadius: 12))
+                .shadow(color: selectedCardID == nil ? .clear : .blue.opacity(0.3), radius: 4)
+                .disabled(selectedCardID == nil) // disable when no card selected
+                .animation(.easeInOut(duration: 0.2), value: selectedCardID)
             }
+            .padding()
+            .background(.ultraThinMaterial) // ✅ nicer than plain gray
+            .clipShape(RoundedRectangle(cornerRadius: 16))
+            .shadow(radius: 2)
+
             .padding()
             .background(Color(.systemGroupedBackground))
 
@@ -175,6 +198,6 @@ struct FilteredAllCardsView: View {
     )
 }
 
-// Chase Sapphire Rewards: 4147201234567890
-// Improper: 4847201234567890
+// Chase Sapphire Rewards: 4147201234567898
+// Improper (Test) : 4847201234567890
 

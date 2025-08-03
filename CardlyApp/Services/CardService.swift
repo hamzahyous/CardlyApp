@@ -43,6 +43,7 @@ struct CreateAllCardRequest: Codable {
     let binPrefixes: [String]
     let rewardsType: String
     let categoryMultipliers: [String: Double]
+    let verified: Bool
 }
 
 
@@ -138,6 +139,5 @@ class CardService {
             else { completion(.success(())) }
         }.resume()
     }
-    
     
 }
